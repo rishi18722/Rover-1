@@ -1,6 +1,6 @@
 FROM ros:humble-ros-base
 
-ARG USERNAME=rosdev
+ARG USERNAME=gagan
 ARG UID=1000
 ARG GID=$UID
 
@@ -12,6 +12,9 @@ RUN apt update -q \
     python3-pip \
     xauth \
     ros-humble-rviz2 \
+    ros-humble-xacro \
+    ros-humble-joint-state-publisher-gui \
+    ros-humble-gazebo-ros-pkgs \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -22,7 +25,7 @@ RUN groupadd -g $GID $USERNAME \
 USER $USERNAME
 
 # Create workspace so that user own this directory
-RUN mkdir -p /home/$USERNAME/ros2_ws/src
+RUN mkdir -p /home/$USERNAME/ros2_ws
 WORKDIR /home/$USERNAME/ros2_ws
 
 # Copy configuration files
