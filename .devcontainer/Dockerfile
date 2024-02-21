@@ -1,4 +1,4 @@
-FROM ros:humble-ros-base
+FROM osrf/ros:humble-desktop-full-jammy
 
 ARG USERNAME=gagan
 ARG UID=1000
@@ -10,11 +10,12 @@ RUN apt update -q \
     && apt install -y --no-install-recommends \
     software-properties-common \
     python3-pip \
+    nano \
     xauth \
     ros-humble-rviz2 \
     ros-humble-xacro \
     ros-humble-joint-state-publisher-gui \
-    ros-humble-gazebo-ros-pkgs \
+    ros-humble-ros-gz \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -29,7 +30,7 @@ RUN mkdir -p /home/$USERNAME/ros2_ws
 WORKDIR /home/$USERNAME/ros2_ws
 
 # Copy configuration files
-RUN echo 'source /opt/ros/'$ROS_DISTRO'/setup.bash' >> /home/$USERNAME/.bashrc \
+RUN echo 'source /opt/ros/'$ROS_DISTRO'/setup.bash' >> /home/$USERNAME/.bashrc
 
 # Setup entrypoint
 COPY ./ros_entrypoint.sh /

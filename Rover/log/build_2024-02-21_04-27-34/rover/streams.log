@@ -1,0 +1,27 @@
+[0.162s] Invoking command in '/home/rosdev/ros2_ws/src/Rover/build/rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/src/Rover/build/rover -- -j16 -l16
+[0.230s] Invoked command in '/home/rosdev/ros2_ws/src/Rover/build/rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/src/Rover/build/rover -- -j16 -l16
+[0.272s] Invoking command in '/home/rosdev/ros2_ws/src/Rover/build/rover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/src/Rover/build/rover
+[0.280s] -- Install configuration: ""
+[0.291s] -- Execute custom install script
+[0.325s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/config/empty.yaml
+[0.344s] -- Symlinking: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/description/README.md
+[0.392s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/description/robot.urdf.xacro
+[0.402s] -- Symlinking: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/description/rover_buggy.xacro
+[0.457s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/launch/rsp.launch.py
+[0.485s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/worlds/empty.world
+[0.530s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/ament_index/resource_index/package_run_dependencies/rover
+[0.578s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/ament_index/resource_index/parent_prefix_path/rover
+[0.601s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/ament_prefix_path.sh
+[0.630s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/ament_prefix_path.dsv
+[0.654s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/path.sh
+[0.681s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/path.dsv
+[0.708s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.bash
+[0.739s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.sh
+[0.762s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.zsh
+[0.785s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.dsv
+[0.796s] -- Symlinking: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/package.dsv
+[0.879s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/ament_index/resource_index/packages/rover
+[0.905s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/cmake/roverConfig.cmake
+[0.928s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/cmake/roverConfig-version.cmake
+[0.946s] -- Up-to-date symlink: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/package.xml
+[0.961s] Invoked command in '/home/rosdev/ros2_ws/src/Rover/build/rover' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/src/Rover/build/rover

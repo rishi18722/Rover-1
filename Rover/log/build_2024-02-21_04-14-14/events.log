@@ -1,0 +1,237 @@
+[0.000000] (-) TimerEvent: {}
+[0.000656] (rover) JobQueued: {'identifier': 'rover', 'dependencies': OrderedDict()}
+[0.001283] (rover) JobStarted: {'identifier': 'rover'}
+[0.072858] (rover) JobProgress: {'identifier': 'rover', 'progress': 'cmake'}
+[0.096111] (-) TimerEvent: {}
+[0.100586] (rover) Command: {'cmd': ['/usr/bin/cmake', '/home/rosdev/ros2_ws/src/Rover', '-DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/Rover/install/rover'], 'cwd': '/home/rosdev/ros2_ws/src/Rover/build/rover', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-0804142f-b847-434f-a808-0634bf3557b9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-efc72fb6-f6d7-43d4-a4a7-670e9260b644.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-263e7dbe-05c8-4bbe-baf7-8b2f2a620c49.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-6105aabc86.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/Rover/build/rover'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.163497] (rover) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.196288] (-) TimerEvent: {}
+[0.297349] (-) TimerEvent: {}
+[0.379578] (rover) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.397516] (-) TimerEvent: {}
+[0.498577] (-) TimerEvent: {}
+[0.599334] (-) TimerEvent: {}
+[0.700227] (-) TimerEvent: {}
+[0.800988] (-) TimerEvent: {}
+[0.840102] (rover) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.901164] (-) TimerEvent: {}
+[1.001928] (-) TimerEvent: {}
+[1.102718] (-) TimerEvent: {}
+[1.203569] (-) TimerEvent: {}
+[1.304195] (-) TimerEvent: {}
+[1.405174] (-) TimerEvent: {}
+[1.505982] (-) TimerEvent: {}
+[1.606770] (-) TimerEvent: {}
+[1.707452] (-) TimerEvent: {}
+[1.808137] (-) TimerEvent: {}
+[1.908825] (-) TimerEvent: {}
+[2.009493] (-) TimerEvent: {}
+[2.110201] (-) TimerEvent: {}
+[2.210846] (-) TimerEvent: {}
+[2.311631] (-) TimerEvent: {}
+[2.412474] (-) TimerEvent: {}
+[2.513182] (-) TimerEvent: {}
+[2.613868] (-) TimerEvent: {}
+[2.714454] (-) TimerEvent: {}
+[2.815008] (-) TimerEvent: {}
+[2.915607] (-) TimerEvent: {}
+[3.016257] (-) TimerEvent: {}
+[3.116923] (-) TimerEvent: {}
+[3.217655] (-) TimerEvent: {}
+[3.318570] (-) TimerEvent: {}
+[3.419350] (-) TimerEvent: {}
+[3.519971] (-) TimerEvent: {}
+[3.620717] (-) TimerEvent: {}
+[3.721372] (-) TimerEvent: {}
+[3.822519] (-) TimerEvent: {}
+[3.923216] (-) TimerEvent: {}
+[4.023911] (-) TimerEvent: {}
+[4.124763] (-) TimerEvent: {}
+[4.225489] (-) TimerEvent: {}
+[4.326091] (-) TimerEvent: {}
+[4.426632] (-) TimerEvent: {}
+[4.527299] (-) TimerEvent: {}
+[4.597995] (rover) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.599348] (rover) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.600356] (rover) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.627481] (-) TimerEvent: {}
+[4.728282] (-) TimerEvent: {}
+[4.828974] (-) TimerEvent: {}
+[4.929593] (-) TimerEvent: {}
+[5.030348] (-) TimerEvent: {}
+[5.131333] (-) TimerEvent: {}
+[5.232671] (-) TimerEvent: {}
+[5.337322] (-) TimerEvent: {}
+[5.438075] (-) TimerEvent: {}
+[5.538817] (-) TimerEvent: {}
+[5.639726] (-) TimerEvent: {}
+[5.740592] (-) TimerEvent: {}
+[5.841378] (-) TimerEvent: {}
+[5.942154] (-) TimerEvent: {}
+[6.042798] (-) TimerEvent: {}
+[6.143407] (-) TimerEvent: {}
+[6.244129] (-) TimerEvent: {}
+[6.344846] (-) TimerEvent: {}
+[6.445698] (-) TimerEvent: {}
+[6.546962] (-) TimerEvent: {}
+[6.647954] (-) TimerEvent: {}
+[6.748777] (-) TimerEvent: {}
+[6.849772] (-) TimerEvent: {}
+[6.950712] (-) TimerEvent: {}
+[7.051605] (-) TimerEvent: {}
+[7.152393] (-) TimerEvent: {}
+[7.253144] (-) TimerEvent: {}
+[7.353899] (-) TimerEvent: {}
+[7.454710] (-) TimerEvent: {}
+[7.555496] (-) TimerEvent: {}
+[7.656187] (-) TimerEvent: {}
+[7.757085] (-) TimerEvent: {}
+[7.857605] (-) TimerEvent: {}
+[7.958626] (-) TimerEvent: {}
+[8.059401] (-) TimerEvent: {}
+[8.160403] (-) TimerEvent: {}
+[8.261170] (-) TimerEvent: {}
+[8.361913] (-) TimerEvent: {}
+[8.462810] (-) TimerEvent: {}
+[8.563429] (-) TimerEvent: {}
+[8.664196] (-) TimerEvent: {}
+[8.764921] (-) TimerEvent: {}
+[8.818262] (rover) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[8.828495] (rover) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[8.865050] (-) TimerEvent: {}
+[8.965740] (-) TimerEvent: {}
+[9.066384] (-) TimerEvent: {}
+[9.167275] (-) TimerEvent: {}
+[9.267988] (-) TimerEvent: {}
+[9.331055] (rover) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.368137] (-) TimerEvent: {}
+[9.468826] (-) TimerEvent: {}
+[9.569499] (-) TimerEvent: {}
+[9.670271] (-) TimerEvent: {}
+[9.770964] (-) TimerEvent: {}
+[9.871537] (-) TimerEvent: {}
+[9.972175] (-) TimerEvent: {}
+[10.072890] (-) TimerEvent: {}
+[10.173836] (-) TimerEvent: {}
+[10.242935] (rover) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.274014] (-) TimerEvent: {}
+[10.374930] (-) TimerEvent: {}
+[10.475569] (-) TimerEvent: {}
+[10.576339] (-) TimerEvent: {}
+[10.676898] (-) TimerEvent: {}
+[10.689343] (rover) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[10.777058] (-) TimerEvent: {}
+[10.877589] (-) TimerEvent: {}
+[10.978211] (-) TimerEvent: {}
+[11.079164] (-) TimerEvent: {}
+[11.179866] (-) TimerEvent: {}
+[11.280575] (-) TimerEvent: {}
+[11.381263] (-) TimerEvent: {}
+[11.504901] (-) TimerEvent: {}
+[11.605673] (-) TimerEvent: {}
+[11.706267] (-) TimerEvent: {}
+[11.806982] (-) TimerEvent: {}
+[11.907760] (-) TimerEvent: {}
+[12.008325] (-) TimerEvent: {}
+[12.109120] (-) TimerEvent: {}
+[12.210055] (-) TimerEvent: {}
+[12.310693] (-) TimerEvent: {}
+[12.411437] (-) TimerEvent: {}
+[12.511986] (-) TimerEvent: {}
+[12.612939] (-) TimerEvent: {}
+[12.713553] (-) TimerEvent: {}
+[12.814214] (-) TimerEvent: {}
+[12.915045] (-) TimerEvent: {}
+[13.015511] (-) TimerEvent: {}
+[13.116211] (-) TimerEvent: {}
+[13.216826] (-) TimerEvent: {}
+[13.317461] (-) TimerEvent: {}
+[13.418105] (-) TimerEvent: {}
+[13.518965] (-) TimerEvent: {}
+[13.619593] (-) TimerEvent: {}
+[13.720312] (-) TimerEvent: {}
+[13.820935] (-) TimerEvent: {}
+[13.921545] (-) TimerEvent: {}
+[14.022154] (-) TimerEvent: {}
+[14.122741] (-) TimerEvent: {}
+[14.223360] (-) TimerEvent: {}
+[14.264611] (rover) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.265977] (rover) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.323563] (-) TimerEvent: {}
+[14.424293] (-) TimerEvent: {}
+[14.525068] (-) TimerEvent: {}
+[14.625753] (-) TimerEvent: {}
+[14.726628] (-) TimerEvent: {}
+[14.791545] (rover) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.826823] (-) TimerEvent: {}
+[14.927802] (-) TimerEvent: {}
+[14.952876] (rover) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.027966] (-) TimerEvent: {}
+[15.128729] (-) TimerEvent: {}
+[15.229540] (-) TimerEvent: {}
+[15.275139] (rover) StdoutLine: {'line': b'-- Generating done\n'}
+[15.329673] (-) TimerEvent: {}
+[15.354147] (rover) StdoutLine: {'line': b'-- Build files have been written to: /home/rosdev/ros2_ws/src/Rover/build/rover\n'}
+[15.357227] (rover) CommandEnded: {'returncode': 0}
+[15.363103] (rover) JobProgress: {'identifier': 'rover', 'progress': 'build'}
+[15.370670] (rover) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rosdev/ros2_ws/src/Rover/build/rover', '--', '-j16', '-l16'], 'cwd': '/home/rosdev/ros2_ws/src/Rover/build/rover', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-0804142f-b847-434f-a808-0634bf3557b9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-efc72fb6-f6d7-43d4-a4a7-670e9260b644.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-263e7dbe-05c8-4bbe-baf7-8b2f2a620c49.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-6105aabc86.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/Rover/build/rover'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.429787] (-) TimerEvent: {}
+[15.490235] (rover) CommandEnded: {'returncode': 0}
+[15.530042] (-) TimerEvent: {}
+[15.543603] (rover) JobProgress: {'identifier': 'rover', 'progress': 'install'}
+[15.565224] (rover) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rosdev/ros2_ws/src/Rover/build/rover'], 'cwd': '/home/rosdev/ros2_ws/src/Rover/build/rover', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-0804142f-b847-434f-a808-0634bf3557b9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-efc72fb6-f6d7-43d4-a4a7-670e9260b644.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-263e7dbe-05c8-4bbe-baf7-8b2f2a620c49.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-6105aabc86.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/Rover/build/rover'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.576867] (rover) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.589757] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/config\n'}
+[15.630165] (-) TimerEvent: {}
+[15.631319] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/config/empty.yaml\n'}
+[15.713574] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/description\n'}
+[15.730296] (-) TimerEvent: {}
+[15.741270] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/description/robot.urdf.xacro\n'}
+[15.808113] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/launch\n'}
+[15.830426] (-) TimerEvent: {}
+[15.835261] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/launch/rsp.launch.py\n'}
+[15.919771] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/worlds\n'}
+[15.930552] (-) TimerEvent: {}
+[15.952567] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/worlds/empty.world\n'}
+[16.030735] (-) TimerEvent: {}
+[16.064564] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/ament_index/resource_index/package_run_dependencies/rover\n'}
+[16.130914] (-) TimerEvent: {}
+[16.202806] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/ament_index/resource_index/parent_prefix_path/rover\n'}
+[16.231042] (-) TimerEvent: {}
+[16.306136] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/ament_prefix_path.sh\n'}
+[16.331163] (-) TimerEvent: {}
+[16.402719] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/ament_prefix_path.dsv\n'}
+[16.431296] (-) TimerEvent: {}
+[16.489720] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/path.sh\n'}
+[16.531420] (-) TimerEvent: {}
+[16.571893] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/environment/path.dsv\n'}
+[16.631617] (-) TimerEvent: {}
+[16.647002] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.bash\n'}
+[16.717082] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.sh\n'}
+[16.731745] (-) TimerEvent: {}
+[16.796627] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.zsh\n'}
+[16.831884] (-) TimerEvent: {}
+[16.867430] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/local_setup.dsv\n'}
+[16.932121] (-) TimerEvent: {}
+[16.954770] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/package.dsv\n'}
+[17.032245] (-) TimerEvent: {}
+[17.059123] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/ament_index/resource_index/packages/rover\n'}
+[17.132389] (-) TimerEvent: {}
+[17.175002] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/cmake/roverConfig.cmake\n'}
+[17.232551] (-) TimerEvent: {}
+[17.245507] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/cmake/roverConfig-version.cmake\n'}
+[17.318932] (rover) StdoutLine: {'line': b'-- Installing: /home/rosdev/ros2_ws/src/Rover/install/rover/share/rover/package.xml\n'}
+[17.332948] (-) TimerEvent: {}
+[17.383419] (rover) CommandEnded: {'returncode': 0}
+[17.433090] (-) TimerEvent: {}
+[17.534160] (-) TimerEvent: {}
+[17.634943] (-) TimerEvent: {}
+[17.735557] (-) TimerEvent: {}
+[17.836214] (-) TimerEvent: {}
+[17.937217] (-) TimerEvent: {}
+[18.037956] (-) TimerEvent: {}
+[18.138721] (-) TimerEvent: {}
+[18.239618] (-) TimerEvent: {}
+[18.322503] (rover) JobEnded: {'identifier': 'rover', 'rc': 0}
+[18.340452] (-) TimerEvent: {}
+[18.341009] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+Invoking command in '/home/rosdev/ros2_ws/src/Rover/build/rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosdev/ros2_ws/src/Rover -DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/Rover/install/rover
+Invoked command in '/home/rosdev/ros2_ws/src/Rover/build/rover' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosdev/ros2_ws/src/Rover -DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/Rover/install/rover
