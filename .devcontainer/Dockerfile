@@ -15,7 +15,7 @@ RUN apt update -q \
     ros-humble-rviz2 \
     ros-humble-xacro \
     ros-humble-joint-state-publisher-gui \
-    ros-humble-ros-gz \
+    ros-humble-ros-gazebo-ros-pkgs \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
