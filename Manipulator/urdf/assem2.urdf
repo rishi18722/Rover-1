@@ -3,7 +3,8 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="assem2">
+  name="arm2">
+  
   <link
     name="base_link">
     <inertial>
@@ -29,7 +30,7 @@
           filename="package://arm2/meshes/base_link.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Green">
         <color
           rgba="0.6 0.6 0.6 1" />
       </material>
@@ -69,7 +70,7 @@
           filename="package://arm2/meshes/link1.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Red">
         <color
           rgba="0.66667 0.69804 0.76863 1" />
       </material>
@@ -122,7 +123,7 @@
           filename="package://arm2/meshes/link2.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Blue">
         <color
           rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
       </material>
@@ -175,7 +176,7 @@
           filename="package://arm2/meshes/link3.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Green">
         <color
           rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
       </material>
@@ -228,7 +229,7 @@
           filename="package://arm2/meshes/link4.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Green">
         <color
           rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
@@ -281,7 +282,7 @@
           filename="package://arm2/meshes/link5.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Green">
         <color
           rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
       </material>
@@ -334,7 +335,7 @@
           filename="package://arm2/meshes/link6.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Green">
         <color
           rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
       </material>
@@ -387,7 +388,7 @@
           filename="package://arm2/meshes/link7.STL" />
       </geometry>
       <material
-        name="">
+        name="Gazebo/Green">
         <color
           rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
       </material>
@@ -415,4 +416,17 @@
     <axis
       xyz="1 0 0" />
   </joint>
+  <gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher"
+      filename="libgazebo_ros_joint_state_publisher.so">
+      <update_rate>20</update_rate>
+      <joint_name>joint1</joint_name>
+      <joint_name>joint2</joint_name>
+      <joint_name>joint3</joint_name>
+      <joint_name>joint4</joint_name>
+      <joint_name>joint5</joint_name>
+      <joint_name>joint6</joint_name>
+      <joint_name>joint7</joint_name>   
+    </plugin>
+  </gazebo>
 </robot>

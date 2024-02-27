@@ -1,4 +1,4 @@
-FROM osrf/ros:humble-desktop-full-jammy
+FROM osrf/ros:humble-desktop-full
 
 ARG USERNAME=gagan
 ARG UID=1000
@@ -12,10 +12,8 @@ RUN apt update -q \
     python3-pip \
     nano \
     xauth \
-    ros-humble-rviz2 \
-    ros-humble-xacro \
     ros-humble-joint-state-publisher-gui \
-    ros-humble-ros-gazebo-ros-pkgs \
+    ros-humble-gazebo-ros-pkgs \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
