@@ -1,4 +1,0 @@
-Invoking command in '/home/rosdev/ros2_ws/src/Rover/build/rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/src/Rover/build/rover -- -j16 -l16
-Invoked command in '/home/rosdev/ros2_ws/src/Rover/build/rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/src/Rover/build/rover -- -j16 -l16
-Invoking command in '/home/rosdev/ros2_ws/src/Rover/build/rover': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/src/Rover/build/rover
-Invoked command in '/home/rosdev/ros2_ws/src/Rover/build/rover' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/src/Rover/build/rover

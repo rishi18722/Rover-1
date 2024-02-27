@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="rover">
+    <xacro:include filename="rover_core.xacro"/>
+</robot>
