@@ -1,5 +1,4 @@
-The following code-block will be rendered as a Mermaid diagram:
-
+Flowchart for URDF Workflow
 ```mermaid
 flowchart LR
 A --> B
