@@ -7,7 +7,7 @@ flowchart LR
     C(Simulated Actuator)
     D(Real Actuator)
     E(Robot State Publisher)
-    F(<img src='https://iconscout.com/ms-icon-310x310.png' width='40' height='40' /> URDF)
+    F(URDF)
     G(/tf_static)
     H(/tf)
     I(/robot_description)
