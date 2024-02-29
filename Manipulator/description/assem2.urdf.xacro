@@ -2,8 +2,7 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot
-  name="arm2">
+<robot xmlns:xacro="https://www.ros.org/wiki/xacro" name="arm2">
   
   <link
     name="base_link">
@@ -27,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/base_link.STL" />
+          filename="file://$(find arm2)/meshes/base_link.STL" />
       </geometry>
       <material
         name="Gazebo/Green">
@@ -41,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/base_link.STL" />
+          filename="file://$(find arm2)/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -67,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link1.STL" />
+          filename="file://$(find arm2)/meshes/link1.STL" />
       </geometry>
       <material
         name="Gazebo/Red">
@@ -81,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link1.STL" />
+          filename="file://$(find arm2)/meshes/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -120,7 +119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link2.STL" />
+          filename="file://$(find arm2)/meshes/link2.STL" />
       </geometry>
       <material
         name="Gazebo/Blue">
@@ -134,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link2.STL" />
+          filename="file://$(find arm2)/meshes/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -173,7 +172,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link3.STL" />
+          filename="file://$(find arm2)/meshes/link3.STL" />
       </geometry>
       <material
         name="Gazebo/Green">
@@ -187,7 +186,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link3.STL" />
+          filename="file://$(find arm2)/meshes/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -226,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link4.STL" />
+          filename="file://$(find arm2)/meshes/link4.STL" />
       </geometry>
       <material
         name="Gazebo/Green">
@@ -240,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link4.STL" />
+          filename="file://$(find arm2)/meshes/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -279,7 +278,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link5.STL" />
+          filename="file://$(find arm2)/meshes/link5.STL" />
       </geometry>
       <material
         name="Gazebo/Green">
@@ -293,7 +292,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link5.STL" />
+          filename="file://$(find arm2)/meshes/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -332,7 +331,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link6.STL" />
+          filename="file://$(find arm2)/meshes/link6.STL" />
       </geometry>
       <material
         name="Gazebo/Green">
@@ -346,7 +345,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link6.STL" />
+          filename="file://$(find arm2)/meshes/link6.STL" />
       </geometry>
     </collision>
   </link>
@@ -385,7 +384,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link7.STL" />
+          filename="file://$(find arm2)/meshes/link7.STL" />
       </geometry>
       <material
         name="Gazebo/Green">
@@ -399,7 +398,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://arm2/meshes/link7.STL" />
+          filename="file://$(find arm2)/meshes/link7.STL" />
       </geometry>
     </collision>
   </link>

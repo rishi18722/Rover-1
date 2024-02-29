@@ -10,13 +10,13 @@ from launch_ros.actions import Node
 import xacro
 
 def generate_launch_description():
-
+    # Define package name
     package_name='rover'
 
     # Check if we're told to use sim time
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    # Process th URDF File
+    # Process the URDF File
     pkg_path = os.path.join(get_package_share_directory(package_name))
     xacro_file = os.path.join(pkg_path,'description','rover.urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)

@@ -24,7 +24,7 @@ if(BUILD_TESTING)
 endif()
 
 # tell colcon how to install directory
-install(DIRECTORY launch description config worlds
+install(DIRECTORY launch description config worlds meshes
   DESTINATION share/${PROJECT_NAME}
 )
 
