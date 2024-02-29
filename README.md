@@ -16,7 +16,7 @@ flowchart LR
     D --> B
     B --> E
     F --> E
-    E --> G
-    E --> H
-    E --> I
+    E --> |Fixed Joint Transform| G
+    E --> |Non-Fixed Transform| H
+    E --> |URDF| I
 ```
