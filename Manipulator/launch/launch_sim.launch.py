@@ -35,15 +35,26 @@ def generate_launch_description():
         arguments=['-d', rviz_config_path]
     )
 
-    # joint_state_publisher_gui_node
-    joint_state_publisher_gui_node = Node(
-        package="joint_state_publisher_gui",
-        executable="joint_state_publisher_gui",
+    # gazebo_node
+    gazebo_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('gazebo_ros'),'launch',"gazebo.launch.py")])
+        
+    )
+
+    # spawn_node
+    spawn_node = Node( 
+        package='gazebo_ros', 
+        executable='spawn_entity.py', 
+        arguments=['-topic', 'robot_description','-entity', 'arm2'], 
+        output='screen'
     )
 
     # Launch them all!!
     return LaunchDescription([
         robot_state_publisher_node,
         rviz2_node,
-        joint_state_publisher_gui_node
+        gazebo_node,
+        spawn_node
+
     ])
