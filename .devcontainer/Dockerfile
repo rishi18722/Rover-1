@@ -14,6 +14,7 @@ RUN apt update -q \
     xauth \
     ros-humble-joint-state-publisher-gui \
     ros-humble-gazebo-ros-pkgs \
+    ros-humble-moveit \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
