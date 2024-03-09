@@ -1,0 +1,450 @@
+<?xml version="1.0" ?>
+<robot name="assem1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find assem1_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find assem1_description)/urdf/assem1.trans" />
+<xacro:include filename="$(find assem1_description)/urdf/assem1.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.0030632357752009374 0.003088727731188072 0.045918953287975475" rpy="0 0 0"/>
+    <mass value="192.92159999999998"/>
+    <inertia ixx="6.687949" iyy="3.806986" izz="10.289152" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/base_link.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/base_link.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part2_1">
+  <inertial>
+    <origin xyz="-0.010911311293864655 -0.05529969992583282 0.06139654458639404" rpy="0 0 0"/>
+    <mass value="17.701233959851926"/>
+    <inertia ixx="0.178207" iyy="0.09469" izz="0.124657" ixy="-0.017913" iyz="0.0684" ixz="0.013711"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.003063 -0.003089 -0.190919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part2_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.003063 -0.003089 -0.190919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part2_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part3_1">
+  <inertial>
+    <origin xyz="-0.005182507077487054 0.12838435386256494 0.0717552847232073" rpy="0 0 0"/>
+    <mass value="7.22749176500749"/>
+    <inertia ixx="0.137207" iyy="0.050406" izz="0.100334" ixy="-0.022977" iyz="-0.059968" ixz="-0.014619"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.038331 0.142706 -0.330919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part3_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.038331 0.142706 -0.330919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part3_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part4_1">
+  <inertial>
+    <origin xyz="0.011724639975586672 -0.06227515847861945 -0.015690080281824947" rpy="0 0 0"/>
+    <mass value="11.236916808319004"/>
+    <inertia ixx="0.064352" iyy="0.024344" izz="0.055655" ixy="-0.009096" iyz="0.017391" ixz="0.004684"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.030387 -0.141374 -0.523471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part4_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.030387 -0.141374 -0.523471" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part4_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part5_1">
+  <inertial>
+    <origin xyz="-0.019119574882464244 -0.07904125203019088 0.04076278935412059" rpy="0 0 0"/>
+    <mass value="4.564272686214756"/>
+    <inertia ixx="0.011004" iyy="0.006391" izz="0.010732" ixy="-0.000969" iyz="0.002857" ixz="0.001086"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.004873 0.081066 -0.584516" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part5_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.004873 0.081066 -0.584516" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part5_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part7_1">
+  <inertial>
+    <origin xyz="0.006669159719989541 0.03655129702098897 0.05115457936445622" rpy="0 0 0"/>
+    <mass value="2.6622847012153508"/>
+    <inertia ixx="0.00266" iyy="0.002593" izz="0.002307" ixy="-0.000183" iyz="-0.00031" ixz="-0.000278"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.003681 0.20663 -0.638292" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part7_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.003681 0.20663 -0.638292" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part7_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part8_1">
+  <inertial>
+    <origin xyz="0.002854033391193094 0.0030028641318119997 0.004726285016126597" rpy="0 0 0"/>
+    <mass value="0.5986212262936281"/>
+    <inertia ixx="0.000282" iyy="0.000294" izz="0.000287" ixy="-9e-06" iyz="1.8e-05" ixz="2.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.023282 0.148493 -0.723368" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part8_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.023282 0.148493 -0.723368" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part8_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part9_1">
+  <inertial>
+    <origin xyz="0.043545764516277764 0.03738600757521744 0.01633233444478477" rpy="0 0 0"/>
+    <mass value="0.36097891893203876"/>
+    <inertia ixx="0.00023" iyy="0.000306" izz="0.000441" ixy="-0.000207" iyz="-4.8e-05" ixz="-5.4e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.059773 0.120751 -0.715132" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.059773 0.120751 -0.715132" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part9_2">
+  <inertial>
+    <origin xyz="-0.5557827107504087 -0.159452899680161 0.5477674898337425" rpy="0 0 0"/>
+    <mass value="0.36097891893203876"/>
+    <inertia ixx="0.000272" iyy="0.000319" izz="0.000385" ixy="-0.000181" iyz="-0.000104" ixz="-0.000113"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.606893 -0.042637 -0.23854" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.606893 -0.042637 -0.23854" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Part1_1">
+  <inertial>
+    <origin xyz="-2.3577520094197196e-07 -2.7226882862553883e-07 0.039626993198063926" rpy="0 0 0"/>
+    <mass value="43.256899010092134"/>
+    <inertia ixx="0.25538" iyy="0.25538" izz="0.462403" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.003063 -0.003089 -0.085919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part1_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.003063 -0.003089 -0.085919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/Part1_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1_1">
+  <inertial>
+    <origin xyz="0.01249976422479887 -2.722688113299121e-07 -4.671202449065687e-08" rpy="0 0 0"/>
+    <mass value="2.604871183678062"/>
+    <inertia ixx="0.005503" iyy="0.002887" izz="0.002887" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.236937 0.316911 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.236937 0.316911 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1__1__1">
+  <inertial>
+    <origin xyz="0.01249976422479887 -2.7226881249564627e-07 -4.6712024579127764e-08" rpy="0 0 0"/>
+    <mass value="2.604871183678062"/>
+    <inertia ixx="0.005503" iyy="0.002887" izz="0.002887" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.236937 -0.323089 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__1__1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.236937 -0.323089 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__1__1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1__2__1">
+  <inertial>
+    <origin xyz="-0.012500235775200791 -2.7226881249564627e-07 -4.6712024568719424e-08" rpy="0 0 0"/>
+    <mass value="2.604871183678062"/>
+    <inertia ixx="0.005503" iyy="0.002887" izz="0.002887" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.243063 -0.323089 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__2__1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.243063 -0.323089 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__2__1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1__3__1">
+  <inertial>
+    <origin xyz="-0.012500235775200791 -2.722688113299121e-07 -4.67120244264721e-08" rpy="0 0 0"/>
+    <mass value="2.604871183678062"/>
+    <inertia ixx="0.005503" iyy="0.002887" izz="0.002887" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.243063 0.316911 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__3__1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.243063 0.316911 -0.005919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__3__1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="-2.3577520093243098e-07 -0.005000272268811223 -4.671202445682976e-08" rpy="0 0 0"/>
+    <mass value="0.18839999999999998"/>
+    <inertia ixx="2.7e-05" iyy="8.2e-05" izz="5.8e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.003063 0.316911 -0.045919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.003063 0.316911 -0.045919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin xyz="0.003062764224799069 0.036911727731188615 0.014080953287975456" rpy="0 0 0"/>
+    <mass value="0.3945840372908781"/>
+    <inertia ixx="9.2e-05" iyy="9.2e-05" izz="7.9e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.006126 0.313823 -0.091838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/lidar_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.006126 0.313823 -0.091838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find assem1_description)/meshes/lidar_1.STL" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.0 0.0 0.105" rpy="0 0 0"/>
+  <parent link="Part1_1"/>
+  <child link="Part2_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="-0.035268 -0.145795 0.14" rpy="0 0 0"/>
+  <parent link="Part2_1"/>
+  <child link="Part3_1"/>
+  <axis xyz="-0.971968 0.235115 0.0"/>
+  <limit upper="1.047198" lower="-1.745329" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="0.068718 0.28408 0.192552" rpy="0 0 0"/>
+  <parent link="Part3_1"/>
+  <child link="Part4_1"/>
+  <axis xyz="0.971968 -0.235115 -0.0"/>
+  <limit upper="1.047198" lower="-1.047198" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="-0.025514 -0.22244 0.061045" rpy="0 0 0"/>
+  <parent link="Part4_1"/>
+  <child link="Part5_1"/>
+  <axis xyz="-0.210187 -0.868915 0.448116"/>
+</joint>
+
+<joint name="Revolute 5" type="revolute">
+  <origin xyz="-0.008554 -0.125564 0.053776" rpy="0 0 0"/>
+  <parent link="Part5_1"/>
+  <child link="Part7_1"/>
+  <axis xyz="-0.880921 0.36712 0.298667"/>
+  <limit upper="1.745329" lower="-1.745329" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 6" type="continuous">
+  <origin xyz="0.026963 0.058137 0.085076" rpy="0 0 0"/>
+  <parent link="Part7_1"/>
+  <child link="Part8_1"/>
+  <axis xyz="0.454085 0.47782 0.751993"/>
+</joint>
+
+<joint name="Revolute 7" type="revolute">
+  <origin xyz="0.036491 0.027742 -0.008236" rpy="0 0 0"/>
+  <parent link="Part8_1"/>
+  <child link="Part9_1"/>
+  <axis xyz="0.617894 -0.776961 0.120574"/>
+  <limit upper="0.349066" lower="-0.349066" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 8" type="revolute">
+  <origin xyz="0.583611 0.19113 -0.484828" rpy="0 0 0"/>
+  <parent link="Part8_1"/>
+  <child link="Part9_2"/>
+  <axis xyz="0.617894 -0.776961 0.120574"/>
+  <limit upper="1.396263" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="-0.003063 0.003089 0.085919" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Part1_1"/>
+</joint>
+
+<joint name="Revolute 10" type="continuous">
+  <origin xyz="0.236937 -0.316911 0.005919" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 11" type="continuous">
+  <origin xyz="0.236937 0.323089 0.005919" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1__1__1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 12" type="continuous">
+  <origin xyz="-0.243063 0.323089 0.005919" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1__2__1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 13" type="continuous">
+  <origin xyz="-0.243063 -0.316911 0.005919" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1__3__1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 16" type="fixed">
+  <origin xyz="-0.003063 -0.316911 0.045919" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="-0.006126 -0.313823 0.091838" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+</robot>
