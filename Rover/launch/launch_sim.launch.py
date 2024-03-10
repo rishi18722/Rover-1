@@ -10,34 +10,49 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
 
-
 def generate_launch_description():
 
-    package_name='rover'
+    package_name = "rover"
 
     rover = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory(package_name),'launch','rover.launch.py'
-                )]), launch_arguments={'use_sim_time': 'true'}.items()
+        PythonLaunchDescriptionSource(
+            [
+                os.path.join(
+                    get_package_share_directory(package_name),
+                    "launch",
+                    "rover.launch.py",
+                )
+            ]
+        ),
+        launch_arguments={"use_sim_time": "true"}.items(),
     )
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
-             )
+        PythonLaunchDescriptionSource(
+            [
+                os.path.join(
+                    get_package_share_directory("gazebo_ros"),
+                    "launch",
+                    "gazebo.launch.py",
+                )
+            ]
+        ),
+    )
 
     # Run the spawner node from the gazebo_ros package.
-    spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
-                        arguments=['-topic', 'robot_description',
-                                   '-entity', 'my_bot'],
-                        output='screen')
-
-
+    spawn_entity = Node(
+        package="gazebo_ros",
+        executable="spawn_entity.py",
+        arguments=["-topic", "robot_description", "-entity", "my_bot"],
+        output="screen",
+    )
 
     # Launch them all!
-    return LaunchDescription([
-        rover,
-        gazebo,
-        spawn_entity,
-    ])
+    return LaunchDescription(
+        [
+            rover,
+            gazebo,
+            spawn_entity,
+        ]
+    )
