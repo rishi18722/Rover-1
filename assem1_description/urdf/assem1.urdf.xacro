@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <robot name="assem1" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
@@ -162,7 +163,7 @@
     <geometry>
       <mesh filename="file://$(find assem1_description)/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="green"/>
   </visual>
   <collision>
     <origin xyz="-0.059773 0.120751 -0.715132" rpy="0 0 0"/>
@@ -179,11 +180,11 @@
     <inertia ixx="0.000272" iyy="0.000319" izz="0.000385" ixy="-0.000181" iyz="-0.000104" ixz="-0.000113"/>
   </inertial>
   <visual>
-    <origin xyz="-0.606893 -0.042637 -0.23854" rpy="0 0 0"/>
+    <origin xyz="-0.019773 0.1530751 -0.765132" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find assem1_description)/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="red"/>
   </visual>
   <collision>
     <origin xyz="-0.606893 -0.042637 -0.23854" rpy="0 0 0"/>
@@ -394,7 +395,7 @@
 </joint>
 
 <joint name="Revolute 8" type="revolute">
-  <origin xyz="0.583611 0.19113 -0.484828" rpy="0 0 0"/>
+  <origin xyz="-0.01 -0.01 0.04" rpy="0 0 0"/>
   <parent link="Part8_1"/>
   <child link="Part9_2"/>
   <axis xyz="0.617894 -0.776961 0.120574"/>
