@@ -30,6 +30,7 @@ WORKDIR /home/$USERNAME/ros2_ws
 
 # Copy configuration files
 RUN echo 'source /opt/ros/'$ROS_DISTRO'/setup.bash' >> /home/$USERNAME/.bashrc
+RUN echo 'source ~/ros2_ws/src/**/install/setup.bash' >> /home/$USERNAME/.bashrc
 
 # Setup entrypoint
 COPY ./ros_entrypoint.sh /
