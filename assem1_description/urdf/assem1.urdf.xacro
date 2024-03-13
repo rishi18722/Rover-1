@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/base_link.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/base_link.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/base_link.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/base_link.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="0.003063 -0.003089 -0.190919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part2_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part2_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.003063 -0.003089 -0.190919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part2_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part2_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="0.038331 0.142706 -0.330919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part3_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part3_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.038331 0.142706 -0.330919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part3_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part3_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.030387 -0.141374 -0.523471" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part4_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part4_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.030387 -0.141374 -0.523471" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part4_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part4_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.004873 0.081066 -0.584516" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part5_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part5_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.004873 0.081066 -0.584516" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part5_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part5_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="0.003681 0.20663 -0.638292" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part7_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part7_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.003681 0.20663 -0.638292" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part7_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part7_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.023282 0.148493 -0.723368" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part8_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part8_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.023282 0.148493 -0.723368" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part8_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part8_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="-0.059773 0.120751 -0.715132" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="green"/>
   </visual>
   <collision>
     <origin xyz="-0.059773 0.120751 -0.715132" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-0.019773 0.1530751 -0.765132" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="red"/>
   </visual>
   <collision>
     <origin xyz="-0.606893 -0.042637 -0.23854" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="0.003063 -0.003089 -0.085919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part1_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part1_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.003063 -0.003089 -0.085919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/Part1_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/Part1_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.236937 0.316911 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.236937 0.316911 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +244,14 @@
   <visual>
     <origin xyz="-0.236937 -0.323089 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__1__1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1__1__1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.236937 -0.323089 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__1__1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1__1__1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +265,14 @@
   <visual>
     <origin xyz="0.243063 -0.323089 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__2__1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1__2__1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.243063 -0.323089 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__2__1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1__2__1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -286,14 +286,14 @@
   <visual>
     <origin xyz="0.243063 0.316911 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__3__1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1__3__1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.243063 0.316911 -0.005919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/wheel_v1__3__1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/wheel_v1__3__1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -307,14 +307,14 @@
   <visual>
     <origin xyz="0.003063 0.316911 -0.045919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.003063 0.316911 -0.045919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -328,14 +328,14 @@
   <visual>
     <origin xyz="0.006126 0.313823 -0.091838" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/lidar_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/lidar_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.006126 0.313823 -0.091838" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/lidar_1.STL" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://assem1_description/meshes/lidar_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
