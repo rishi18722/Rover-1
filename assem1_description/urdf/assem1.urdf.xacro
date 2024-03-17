@@ -162,7 +162,7 @@
     <geometry>
       <mesh filename="package://assem1_description/meshes/Part9_1.STL" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="green"/>
+    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.059773 0.120751 -0.715132" rpy="0 0 0"/>
@@ -183,7 +183,7 @@
     <geometry>
       <mesh filename="package://assem1_description/meshes/Part9_2.STL" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="red"/>
+    <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.606893 -0.042637 -0.23854" rpy="0 0 0"/>
