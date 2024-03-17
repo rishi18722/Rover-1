@@ -18,6 +18,7 @@ def generate_launch_description():
     pkg_path = os.path.join(get_package_share_directory(package_name))
     xacro_file = os.path.join(pkg_path, "urdf", "assem1.urdf.xacro")
     robot_description = xacro.process_file(xacro_file)
+    rviz_config_path = os.path.join(pkg_path, "launch", "urdf.rviz")
     # robot_state_publisher_node
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
@@ -29,7 +30,33 @@ def generate_launch_description():
         package="joint_state_publisher_gui",
         executable="joint_state_publisher_gui",
     )
+
+    rviz2_node = Node(
+        package="rviz2", executable="rviz2"
+    )
+
+    # gazebo_node
+    gazebo_node = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            [
+                os.path.join(
+                    get_package_share_directory("gazebo_ros"),
+                    "launch",
+                    "gazebo.launch.py",
+                )
+            ]
+        )
+    )
+
+    # spawn_node
+    spawn_node = Node(
+        package="gazebo_ros",
+        executable="spawn_entity.py",
+        arguments=["-topic", "robot_description", "-entity", "arm2"],
+        output="screen",
+    )
+
     # Launch them all!!
     return LaunchDescription(
-        [robot_state_publisher_node, joint_state_publisher_gui_node]
+        [robot_state_publisher_node, joint_state_publisher_gui_node, rviz2_node, gazebo_node, spawn_node]
     )
