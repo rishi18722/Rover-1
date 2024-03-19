@@ -2,7 +2,6 @@
 <robot name="assem1" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 <xacro:include filename="$(find assem1_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find assem1_description)/urdf/assem1.trans" />
 <xacro:include filename="$(find assem1_description)/urdf/assem1.gazebo" />
 <link name="base_link">
   <inertial>
