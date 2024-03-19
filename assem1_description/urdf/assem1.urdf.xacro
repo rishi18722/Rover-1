@@ -424,14 +424,14 @@
   <origin xyz="-0.243063 0.323089 0.005919" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="wheel_v1__2__1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
+  <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="Revolute 13" type="continuous">
   <origin xyz="-0.243063 -0.316911 0.005919" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="wheel_v1__3__1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
+  <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="Rigid 16" type="fixed">
