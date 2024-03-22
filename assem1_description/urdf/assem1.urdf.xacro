@@ -4,6 +4,7 @@
 <xacro:include filename="$(find assem1_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find assem1_description)/urdf/assem1.gazebo" />
 <xacro:include filename="$(find assem1_description)/urdf/lidar.xacro"/>
+<xacro:include filename="$(find assem1_description)/urdf/camera.xacro"/>
 <link name="base_link">
   <inertial>
     <origin xyz="-0.0030632357752009374 0.003088727731188072 0.045918953287975475" rpy="0 0 0"/>
@@ -298,28 +299,6 @@
   </collision>
 </link>
 
-<link name="camera_1">
-  <inertial>
-    <origin xyz="-2.3577520093243098e-07 -0.005000272268811223 -4.671202445682976e-08" rpy="0 0 0"/>
-    <mass value="0.18839999999999998"/>
-    <inertia ixx="2.7e-05" iyy="8.2e-05" izz="5.8e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.003063 0.316911 -0.045919" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.003063 0.316911 -0.045919" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find assem1_description)/meshes/camera_1.STL" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-
 
 <joint name="Revolute 1" type="continuous">
   <origin xyz="0.0 0.0 0.105" rpy="0 0 0"/>
@@ -416,11 +395,7 @@
   <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
-<joint name="Rigid 16" type="fixed">
-  <origin xyz="-0.003063 -0.316911 0.045919" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="camera_1"/>
-</joint>
+
 
 
 </robot>
