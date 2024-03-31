@@ -15,6 +15,10 @@ RUN apt update -q \
     ros-humble-joint-state-publisher-gui \
     ros-humble-gazebo-ros-pkgs \
     ros-humble-moveit \
+    ros-humble-slam-toolbox \
+    ros-humble-navigation2 \
+    ros-humble-nav2-bringup \
+    ros-humble-turtlebot3 \
     && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

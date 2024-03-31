@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
     <joint name="Rigid 17" type="fixed">
-        <origin xyz="-0.006126 -0.313823 0.091838" rpy="0 0 0"/>
+        <origin xyz="-0.006126 -0.313823 0.091838" rpy="0 0 -0.75"/>
         <parent link="base_link"/>
         <child link="lidar_1"/>
       </joint>
@@ -41,7 +41,7 @@
                         <samples>360</samples>
                         <resolution>1</resolution>
                         <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
+                        <max_angle>1.57</max_angle>
                     </horizontal>
                 </scan>
                 <range>
