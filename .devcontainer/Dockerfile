@@ -33,6 +33,6 @@ RUN echo 'source /opt/ros/'$ROS_DISTRO'/setup.bash' >> /home/$USERNAME/.bashrc
 RUN echo 'source ~/ros2_ws/src/**/install/setup.bash' >> /home/$USERNAME/.bashrc
 
 # Setup entrypoint
-COPY ./ros_entrypoint.sh /
+COPY ./.devcontainer/ros_entrypoint.sh /
 ENTRYPOINT ["/ros_entrypoint.sh"]
 CMD ["bash"]
