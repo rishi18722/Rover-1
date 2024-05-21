@@ -1,0 +1,9 @@
+image:
+  file: .devcontainer/Dockerfile
+
+tasks:
+  - init: >
+      sudo apt-get update &&
+      sudo apt-get install -y lsb-release &&
+      sudo apt-get clean
+    command: /bin/bash
